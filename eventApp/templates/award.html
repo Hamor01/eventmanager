@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main %}
+<section class="about-section section-padding" id="section_2">
+    <div class="container">
+{#        <h2 class="text-white mb-4">{{ award.heading}}</h2>#}
+        <div class="row">
+            <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                <div class="services-info">
+                    <h2 class="text-white mb-4">{{ award.title }}</h2>
+                    <p class="text-white">{{ award.desc }}</p>
+                    <h6 class="text-white mt-4">Spread the Word</h6>
+                    <p class="text-white">Please tell your friends about this achievement. Thank you.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <div class="about-text-wrap">
+                    <img src="http://127.0.0.1:8000/media/{{ award.image }}" class="about-image img-fluid" alt="{{ award.name }}">
+                    <div class="about-text-info d-flex">
+                        <div class="d-flex">
+                            <i class="about-text-icon bi-person"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h3>{{ award.title }}</h3>
+                            <p class="mb-0">{{ award.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

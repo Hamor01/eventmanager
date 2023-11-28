@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    {# TICKET STARTS HERE...#}
+    <section class="ticket-section section-padding">
+        <div class="section-overlay"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-10 mx-auto">
+
+                    <form class="custom-form ticket-form mb-5 mb-lg-0" action="{% url 'eventApp:ticket' %}" method="post" role="form">
+                        {% csrf_token %}
+
+                        <h2 class="text-center mb-4">Get started here</h2>
+
+                        <div class="ticket-form-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="ticket-form-name" id="ticket-form-name"
+                                           class="form-control" placeholder="Full name" required>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="email" name="ticket-form-email" id="ticket-form-email"
+                                           pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address"
+                                           required>
+                                </div>
+                            </div>
+
+                            <input type="number" class="form-control" name="ticket-form-phone"
+                                   placeholder="0700000000" pattern="[0-9]{10}" maxlength="10" required>
+
+                            <h6>Choose Ticket Type</h6>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-check form-control">
+                                        <input class="form-check-input" type="radio" name="TicketForm"
+                                               id="flexRadioDefault1" value="early_bird">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Early Bird Kshs. 5
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-check form-check-radio form-control">
+                                        <input class="form-check-input" type="radio" name="TicketForm"
+                                               id="flexRadioDefault2" value="standard">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Standard Kshs. 10
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="number" name="ticket-form-number" id="ticket-form-number"
+                                   class="form-control" placeholder="Number of Tickets" required min="1">
+
+                            <textarea name="ticket-form-message" rows="3" class="form-control"
+                                      id="ticket-form-message"
+                                      placeholder="What do you expect? This will help us plan for a successful event for you!"></textarea>
+
+                            <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                <button type="submit" class="form-control">Pay For Ticket</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    {# TICKET ENDS HERE...#}
+
+    {% if messages %}
+        <div class="messages">
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+{% endblock %}

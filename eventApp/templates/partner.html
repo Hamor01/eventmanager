@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+{% block main %}
+
+    <style>
+    body{
+        background-color: rgba(0, 0, 0, 0.72);
+
+    }
+    </style>
+{#    PARTNERS SECTION STARTS HERE .... #}
+
+        <section class="partners-section section-padding" id="section_3">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h1 class="mb-4"  style="color: white" >Our Partners</h1>
+                    </div>
+
+{#                    <div class="col-lg-5 col-12">#}
+{#                        <div class="artists-thumb">#}
+{#                            <div class="artists-image-wrap">#}
+{#                                <img src="http://127.0.0.1:8000/media/images/{{ partner.image }}"#}
+{#                                    class="artists-image img-fluid">#}
+{#                            </div>#}
+{##}
+{#                            <div class="artists-hover">#}
+{##}
+{#                                <p>#}
+{#                                    <strong>{{ partner.description }}</strong>#}
+{##}
+{#                                <hr>#}
+{##}
+{#                                <p class="mb-0">#}
+{#                                    <strong>Website:</strong>#}
+{#                                    <a href="{{ partner.website }}">Official Link</a>#}
+{#                                </p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+
+                     <div class="col-lg-5 col-12">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="{% static 'images/ajira.jpeg' %}"
+                                    class="artists-image img-fluid">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>The projects involved developing training programs and workshops, and Ajira provided support and resources.</strong>
+
+                                </p>
+
+                                <hr>
+
+                                <p class="mb-0">
+                                    <strong>Website: </strong>
+                                    <a href="https://ajiradigital.go.ke/">Ajira Official</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="{% static 'images/mastercard.jpeg' %}"
+                                    class="artists-image img-fluid">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Emobilis students developed projects that explored innovative uses of digital payments, with Mastercard offering sponsorship or prizes.</strong>
+                                </p>
+
+
+                                <hr>
+
+                                <p class="mb-0">
+                                    <strong>Website:</strong>
+                                    <a href="https://www.bing.com/ck/a?!&&p=06d8dbac3745d18bJmltdHM9MTcwMDk1NjgwMCZpZ3VpZD0zYzhiYzAzMy0wMzFmLTZiMzgtMDA5Ny1kMzlhMDJjMjZhNGEmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=3c8bc033-031f-6b38-0097-d39a02c26a4a&psq=mastercard+foundation&u=a1aHR0cHM6Ly9tYXN0ZXJjYXJkZmRuLm9yZy8&ntb=1">Mastercard Official</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="{% static 'images/microsoft_1.jpeg' %}"
+                                    class="artists-image img-fluid">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Co-hosted tech events that brought together professionals, students, and enthusiasts. The events featured Microsoft as a key sponsor, and Emobilis students showcased projects developed using Microsoft technologies.</strong>
+                                </p>
+
+                                <hr>
+
+                                <p class="mb-0">
+                                    <strong>Website:</strong>
+                                    <a href="https://www.microsoft.com/">Microsoft Official</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    {#    PARTNERS SECTION ENDS HERE .... #}
+{% endblock %}
+
+
+{#                        <div class="artists-thumb">#}
+{#                         {% for partner in partner %}#}
+{#                            <div class="artists-image-wrap">#}
+{##}
+{#                                <img src="{{ partner.image.url }}" class="artists-image img-fluid" alt="{{ partner.name }}">#}
+{#                            </div>#}
+{##}
+{#                            <div class="artists-hover">#}
+{#                                <p>#}
+{#                                    <strong>{{ partner.description }}</strong>#}
+{#                                </p>#}
+{##}
+{#                                <hr>#}
+{##}
+{#                                <p class="mb-0">#}
+{#                                    <strong>Website:</strong>#}
+{#                                    <a href="{{ partner.website }}">{{ partner.name }} Official</a>#}
+{#                                </p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        {% endfor %}#}
+
+

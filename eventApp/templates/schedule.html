@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main  %}
+
+    {#    SCHEDULE SECTION STARTS HERE .... #}
+        <section class="schedule-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h1 class="text-white mb-4">Event Schedule</h1>
+
+                            <div class="table-responsive">
+                                <table class="schedule-table table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Time</th>
+
+                                            <th scope="col">Morning</th>
+
+                                            <th scope="col">Afternoon</th>
+
+                                            <th scope="col">Evening</th>
+
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    {% for schedule in schedule %}
+                                        <tr>
+                                            <th scope="row">Day 1</th>
+
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3>{{ schedule.MorningHeading }}</h3>
+
+                                                <p class="mb-2">{{ schedule.MorningTime}}</p>
+
+                                                <p>{{ schedule.MorningAuthor}}</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+
+                                            <td style="background-color: #F3DCD4">
+                                                 <h3>{{ schedule.AfternoonHeading }}</h3>
+
+                                                <p class="mb-2">{{ schedule.AfternoonTime1}}</p>
+
+                                                <p>{{ schedule.AfternoonAuthor}}</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+
+{#                                            <td class="table-background-image-wrap pop-background-image">#}
+{#                                               #}
+{#                                            </td>#}
+
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3>{{ schedule.EveningHeading }}</h3>
+
+                                                <p class="mb-2">{{ schedule.EveningTime1}}</p>
+
+                                                <p>{{ schedule.EveningAuthor}}</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+
+
+                                        </tr>
+                                    {% endfor %}
+{#                                        <tr>#}
+{#                                            <th scope="row">Day 2</th>#}
+{##}
+{#                                            <td style="background-color: #ECC9C7"></td>#}
+{##}
+{#                                            <td>#}
+{#                                                <h3>DJ Night</h3>#}
+{##}
+{#                                                <p class="mb-2">6:30 - 9:30 PM</p>#}
+{##}
+{#                                                <p>By Rihana</p>#}
+{#                                            </td>#}
+{##}
+{#                                            <td style="background-color: #D9E3DA"></td>#}
+{#                                        </tr>#}
+{##}
+{#                                        <tr>#}
+{#                                            <th scope="row">Day 3</th>#}
+{##}
+{#                                            <td class="table-background-image-wrap country-background-image">#}
+{#                                                <h3>Country Music</h3>#}
+{##}
+{#                                                <p class="mb-2">4:30 - 7:30 PM</p>#}
+{##}
+{#                                                <p>By Rihana</p>#}
+{##}
+{#                                                <div class="section-overlay"></div>#}
+{#                                            </td>#}
+{##}
+{#                                            <td style="background-color: #D1CFC0"></td>#}
+{##}
+{#                                            <td>#}
+{#                                                <h3>Free Styles</h3>#}
+{##}
+{#                                                <p class="mb-2">6:00 - 10:00 PM</p>#}
+{##}
+{#                                                <p>By Members</p>#}
+{#                                            </td>#}
+{#                                        </tr>#}
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {#    SCHEDULE SECTION ENDS HERE .... #}
+
+{% endblock %}
+
