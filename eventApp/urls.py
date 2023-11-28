@@ -6,6 +6,7 @@ from . import views
 
 app_name = 'eventApp'
 
+
 urlpatterns = [
     path('', views.index, name= 'index'),
     path('partner/', views.partner, name='partner'),
@@ -14,6 +15,7 @@ urlpatterns = [
     path('schedule/', views.schedule, name = 'schedule'),
     path('pricing/', views.pricing, name = 'pricing'),
     path('ticket/', views.ticket, name='ticket'),
+    path('success/', views.success, name = 'success'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
