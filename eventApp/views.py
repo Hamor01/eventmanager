@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
-from .models import Event, Partner, Schedule, Award
+from .models import Event, Partner, Schedule, Award, Contact
 from django.contrib import messages
 from .forms import TicketForm
 
@@ -44,8 +44,18 @@ def award(request):
 
 
 def contact(request):
-    context = {'contact': contact}
-    return render(request, 'contact.html', context)
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')  # Updated to match the form field name
+        company = request.POST.get('company')  # Updated to match the form field name
+        message = request.POST.get('message')  # Updated to match the form field name
+
+        contact = Contact(name=name, email=email, company=company, message=message)
+        contact.save()
+
+        
+
+    return render(request, 'contact.html')
 
 
 def schedule(request):
@@ -71,3 +81,5 @@ def ticket(request):
         form = TicketForm()
 
     return render(request, 'ticket.html', {'form': form})
+
+
