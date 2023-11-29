@@ -39,7 +39,6 @@ def partner(request):
     return render(request, 'partner.html', context)
 
 
-
 def award(request):
     award = Award.objects.first()
     return render(request, 'award.html', {'award': award})
@@ -51,12 +50,8 @@ def contact(request):
         email = request.POST.get('email')  # Updated to match the form field name
         company = request.POST.get('company')  # Updated to match the form field name
         message = request.POST.get('message')  # Updated to match the form field name
-
         contact = Contact(name=name, email=email, company=company, message=message)
         contact.save()
-
-
-
     return render(request, 'contact.html')
 
 
@@ -115,5 +110,9 @@ def ticket(request):
 
 def success(request):
     return render(request, 'success.html')
+
+
+
+
 
 

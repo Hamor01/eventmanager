@@ -4,6 +4,14 @@
 
 {% block main  %}
 
+    <style>
+    th{
+        color: white;
+        background: green;
+    }
+
+    </style>
+
     {#    SCHEDULE SECTION STARTS HERE .... #}
         <section class="schedule-section section-padding" id="section_4">
             <div class="container">
@@ -16,13 +24,13 @@
                                 <table class="schedule-table table table-dark">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Time</th>
+{#                                            <th scope="col">Time</th>#}
 
-                                            <th scope="col">Morning</th>
+                                            <th style="font-size: 30px; color: #FFFFFF;" scope="col">Morning</th>
 
-                                            <th scope="col">Afternoon</th>
+                                            <th style="font-size: 30px; color: #FFFFFF;" scope="col">Afternoon</th>
 
-                                            <th scope="col">Evening</th>
+                                            <th style="font-size: 30px;color: #FFFFFF;" scope="col">Evening</th>
 
                                         </tr>
                                     </thead>
@@ -30,7 +38,7 @@
                                     <tbody>
                                     {% for schedule in schedule %}
                                         <tr>
-                                            <th scope="row">Day 1</th>
+{#                                            <th scope="row">Day 1</th>#}
 
                                             <td class="table-background-image-wrap pop-background-image">
                                                 <h3>{{ schedule.MorningHeading }}</h3>
