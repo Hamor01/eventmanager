@@ -115,3 +115,5 @@ def ticket(request):
 
 def success(request):
     return render(request, 'success.html')
+
+
