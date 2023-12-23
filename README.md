@@ -1,3 +1,6 @@
+
+```markdown
+
 # Event Web Application
 
 ## Introduction
@@ -40,6 +43,7 @@ Welcome to the Event Web Application, a comprehensive system built to enhance th
 ## Screenshots
 ### Home Page
 <img width="941" alt="image" src="https://github.com/Hamor01/eventmanager/assets/81221383/3a8155af-c803-4e6d-841a-30920099b872">
+
 ### The Code
 <img width="960" alt="image" src="https://github.com/Hamor01/eventmanager/assets/81221383/3a273720-7a57-4738-a755-01c24312fff9">
 
@@ -70,6 +74,8 @@ This project is licensed under the [MIT License](https://www.bing.com/ck/a?!&&p=
 ## Acknowledgements
 Special thanks to the [Django community](https://www.djangoproject.com/community/) and all contributors who have made this project possible.
 
-Feel free to reach out for any questions or issues! Email: haronhumbira@gmail.com Whatsapp +254704511445
+Feel free to reach out for any contribution on how we can make more advancement on this idea Email: haronhumbira@gmail.com Whatsapp +254704511445
 
 **Happy Coding!**
+
+```
