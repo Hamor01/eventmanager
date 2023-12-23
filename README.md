@@ -1,4 +1,3 @@
-```markdown
 # Event Web Application
 
 ## Introduction
@@ -74,4 +73,3 @@ Special thanks to the [Django community](https://www.djangoproject.com/community
 Feel free to reach out for any questions or issues! Email: haronhumbira@gmail.com Whatsapp +254704511445
 
 **Happy Coding!**
-```
