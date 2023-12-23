@@ -1,5 +1,5 @@
+<img width="960" alt="image" src="https://github.com/Hamor01/eventmanager/assets/81221383/8bfa6a6c-847e-4fa0-ab6d-8fb35af70123">
 
-```markdown
 
 # Event Web Application
 
