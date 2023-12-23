@@ -19,7 +19,7 @@ Welcome to the Event Web Application, a comprehensive system built to enhance th
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/event-web-app.git
+   git clone https://github.com/Hamor01/eventmanager.git
    ```
 2. Install dependencies:
    ```bash
