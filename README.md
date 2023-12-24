@@ -1,6 +1,8 @@
+# Event Web Application
+
 <img width="960" alt="image" src="https://github.com/Hamor01/eventmanager/assets/81221383/8bfa6a6c-847e-4fa0-ab6d-8fb35af70123">
 
-# Event Web Application
+
 
 ## Introduction
 Welcome to the Event Web Application, a comprehensive system built to enhance the event experience for both organizers and attendees. This project leverages the power of Python, Django framework, HTML, CSS, Bootstrap, and SQLite database to create a seamless platform for browsing, locating, and RSVPing or purchasing tickets for upcoming events.
